@@ -5,8 +5,21 @@ module.exports = {
   webpackFinal: (config) => {
     return {
       ...config,
-      resolve: { ...config.resolve, alias: { ...config.resolve.alias, ...custom.resolve.alias } },
-      module: { ...config.module, rules: custom.module.rules },
+      resolve: { 
+        ...config.resolve, 
+        ...custom.resolve, 
+        alias: { 
+          ...config.resolve.alias, 
+          ...custom.resolve.alias
+        }
+      },
+      module: { 
+        ...config.module, 
+        rules: [
+          ...custom.module.rules,
+          ...config.module.rules,
+        ]
+      },
     }
   },
 };

@@ -1,5 +1,18 @@
 const path = require('path')
 
+const babelLoaderConfiguration = {
+  test: /\.(ts|tsx|m?js)?$/i,
+  use: {
+    loader: 'babel-loader',
+    options: {
+      presets: [
+        '@babel/preset-env',
+        '@babel/preset-react',
+      ],
+    },
+  }
+};
+
 module.exports = {
   entry: path.join(__dirname, 'src/index.js'),
   output: {
@@ -8,22 +21,14 @@ module.exports = {
   },
   module: {
     rules: [
-      {
-        test: /\.js$/,
-        // exclude: /node_modules\/(?!()\/).*/,
-        use: {
-          loader: 'babel-loader',
-          options: {
-            presets: ['@babel/preset-env', '@babel/preset-react'],
-          },
-        },
-      },
+      babelLoaderConfiguration,
     ],
   },
   resolve: {
       alias: {
-          'react-native$': 'react-native-web',
-          '@storybook/react-native': '@storybook/react',
-        },
+        'react-native$': 'react-native-web',
+        '@storybook/react-native': '@storybook/react',
+      },
+      extensions: ['.web.js', '.js']
   },
 }

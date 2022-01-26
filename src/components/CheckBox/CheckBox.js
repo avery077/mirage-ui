@@ -1,12 +1,12 @@
 import React from 'react';
-import Icon from 'react-native-vector-icons/MaterialIcons';
+import { MaterialIcons } from 'doggie-react-ui';
 
 import { TouchableOpacity, Text, StyleSheet } from 'react-native';
 
 function CheckBox({ selected, onPress, style, textStyle, text = '', ...props}) {
     return (
         <TouchableOpacity style={[styles.checkBox, style]} onPress={onPress} {...props}>
-        <Icon
+        <MaterialIcons
             size={30}
             color={"red"}
             name={ selected ? 'check-box' : 'check-box-outline-blank'}
