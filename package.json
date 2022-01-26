@@ -1,6 +1,6 @@
 {
   "name": "testing-my-component-library",
-  "version": "0.0.16",
+  "version": "0.0.17",
   "main": "dist/cjs/index",
   "module": "dist/esm/index",
   "repository": {
