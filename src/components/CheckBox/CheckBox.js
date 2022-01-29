@@ -3,18 +3,18 @@ import { MaterialIcons } from 'doggie-react-ui';
 
 import { TouchableOpacity, Text, StyleSheet } from 'react-native';
 
-function CheckBox({ style, textStyle, text = '', ...props}) {
-    const [ selected, setSelected ] = useState(false);
+function CheckBox({ selected, style, textStyle, text = '', ...props}) {
+    // const [ selected, setSelected ] = useState(false);
 
-    const pressHandler = () => {
-        setSelected(current => !current)
-      }
-      useEffect( () => {
-        console.log(selected);
-    }, [selected]);
+    // const pressHandler = () => {
+    //     setSelected(current => !current)
+    //   }
+    //   useEffect( () => {
+    //     console.log(selected);
+    // }, [selected]);
 
     return (
-        <TouchableOpacity style={[styles.checkBox, style]} onPress={pressHandler}>
+        <TouchableOpacity style={[styles.checkBox, style]}>
         <MaterialIcons
             size={30}
             color={"red"}
