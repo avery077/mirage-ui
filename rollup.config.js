@@ -2,10 +2,12 @@ import resolve from '@rollup/plugin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs';
 import postcss from 'rollup-plugin-postcss';
 import babel from '@rollup/plugin-babel';
+import peerDepsExternal from 'rollup-plugin-peer-deps-external';
 
 const packageJson = require('./package.json');
 
 const rollupPlugins = [
+    peerDepsExternal(),
     postcss({
         inject: (cssVariableName) => `
         import { styleInject } from 'doggie-react-ui';
