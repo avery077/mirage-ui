@@ -1,6 +1,6 @@
 {
   "name": "mirage-ui",
-  "version": "0.0.17",
+  "version": "0.0.5",
   "main": "dist/cjs/index",
   "module": "dist/esm/index",
   "repository": {
