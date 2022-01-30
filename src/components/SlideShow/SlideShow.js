@@ -67,7 +67,7 @@ const SlideShow = (props) => {
         {props.imageList?.map((value, key) => (
           <Image
             source={{uri: `${value.url}`}}
-            style={{width: dimension?.width, height: 350, resizeMode: 'cover'}}
+            style={{width: dimension?.width, height: 350, resizeMode: 'cover', borderRadius: 10 }}
             PlaceholderContent={<ActivityIndicator />}
           />
         ))}
@@ -83,7 +83,7 @@ const SlideShow = (props) => {
         {props.imageList?.map((val, key) => (
           <Text
             key={key}
-            style={[key === selectedIndex ? {color: 'white'} : {color: '#888'}, { marginLeft: 2, }]}>
+            style={[key === selectedIndex ? {color: '#1976d2'} : {color: '#888'}, { marginLeft: 2, }]}>
             ⬤
           </Text>
         ))}

@@ -16,7 +16,7 @@ function CheckBox({ selected, style, textStyle, text = '', ...props}) {
     return (
         <TouchableOpacity style={[styles.checkBox, style]}>
         <MaterialIcons
-            size={30}
+            size={25}
             color={"red"}
             name={ selected ? 'check-box' : 'check-box-outline-blank' }
         />

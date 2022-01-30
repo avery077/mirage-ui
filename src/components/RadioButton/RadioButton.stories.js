@@ -7,6 +7,6 @@ storiesOf('RadioButton', module).add('example', () =>
     <RadioButton
         color='red'
         style={{ color : "red" }}
-        selected={true}
+        selected={false}
         text='test RadioButton'/>  
 );
