@@ -6857,10 +6857,10 @@ doctrine@^3.0.0:
   dependencies:
     esutils "^2.0.2"
 
-doggie-react-ui@^1.0.15:
-  version "1.0.15"
-  resolved "https://registry.yarnpkg.com/doggie-react-ui/-/doggie-react-ui-1.0.15.tgz#38a8c1deca962fe4945996107a7c49a7b4931744"
-  integrity sha512-L311CFo/YxyPGiXP1c1pVOaF8tyTVmRaosIB0SvcShWxb/t94SpkKeZCYG4kVjkaYH6y0RnthYWPuSULo+wH4w==
+doggie-react-ui@>=1.0.15:
+  version "1.0.19"
+  resolved "https://registry.yarnpkg.com/doggie-react-ui/-/doggie-react-ui-1.0.19.tgz#7073bddbb51b12afb70fb659e014a1a7cbe47979"
+  integrity sha512-Iz6elp2+xRu+fsiw7Pj7Npqy2q9oU5YM8y5KPFC6pM3vpfFWQU8Camhs1rj2j3/NnS2NUgjYpXLdlLNd087xxA==
   dependencies:
     codemirror "*"
     react-native-markdown-display "*"

@@ -22,7 +22,6 @@ function Button(props) {
   const styles = StyleSheet.create({
       btn:{
           backgroundColor: "#1976d2",
-          fontSize: "medium",
           borderColor: "#007bff",
           borderRadius: 5,
           border: "1px solid transparent",
@@ -34,8 +33,9 @@ function Button(props) {
         },
       text:{
           color: "#fff",
-          fontWeight: 600,
-          letterSpacing: 1
+          fontWeight: 400,
+          letterSpacing: 0.5,
+          fontSize: "small"
       }
   });
   
