@@ -1,1 +1,1 @@
-# my-component-library
+# mirage-ui
