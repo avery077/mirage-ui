@@ -5,12 +5,12 @@
   "module": "dist/esm/index",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/avery077/my-component-library.git"
+    "url": "git+https://github.com/avery077/mirage-ui.git"
   },
   "bugs": {
-    "url": "https://github.com/avery077/my-component-library/issues"
+    "url": "https://github.com/avery077/mirage-ui/issues"
   },
-  "homepage": "https://github.com/avery077/my-component-library#readme",
+  "homepage": "https://github.com/avery077/mirage-ui#readme",
   "author": "avery077",
   "license": "GPL-3.0",
   "scripts": {
