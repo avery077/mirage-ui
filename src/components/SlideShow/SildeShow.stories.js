@@ -11,4 +11,4 @@ const imageList = [
     {url: 'https://picsum.photos/1284/250'},
   ]
 
-storiesOf('SlideShow', module).add('example', () => <SlideShow imageList={[]}/>);
+storiesOf('SlideShow', module).add('example', () => <SlideShow imageList={imageList}/>);

@@ -17,7 +17,7 @@ const SlideShow = (props) => {
   });
 
   const onSlideChange = useCallback(() => {
-    const newIndex = selectedIndex === carouselImages.length - 1 ? 0 : selectedIndex + 1;
+    const newIndex = selectedIndex === props.imageList?.length - 1 ? 0 : selectedIndex + 1;
     setSelectedIndex(newIndex);
 
     scrollRef?.current?.scrollTo({
