@@ -4,11 +4,9 @@ import { View, Text, Picker, StyleSheet } from "react-native";
 function DropdownList(props) {
     const [selectedValue, setSelectedValue] = useState("");
 
-      
-
     return(
         <View style={styles.viewStyle}>
-            <View style={{ flex: 0.7, fontSize: 14 }}>
+            <View style={{ flex: 0.1, fontSize: 14 }}>
                 <Picker
                     itemStyle={styles.itemStyle}
                     mode="dropdown"
@@ -51,6 +49,9 @@ const styles = StyleSheet.create({
       color: "#007aff",
       fontSize: 14,
       fontFamily: "Roboto-Regular"
+    },
+    pickItemStyle: {
+      backgroundColor: "white"
     },
     textStyle: {
       fontSize: 14,

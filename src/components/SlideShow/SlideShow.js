@@ -63,11 +63,12 @@ const SlideShow = (props) => {
         showsHorizontalScrollIndicator={false}
         onTouchStart={onTouchStart}
         onTouchEnd={onTouchEnd}
+        style={{ borderRadius: 10 }}
         pagingEnabled>
         {props.imageList?.map((value, key) => (
           <Image
             source={{uri: `${value.url}`}}
-            style={{width: dimension?.width, height: 350, resizeMode: 'cover', borderRadius: 10 }}
+            style={{width: dimension?.width, height: 350, resizeMode: 'cover' }}
             PlaceholderContent={<ActivityIndicator />}
           />
         ))}
