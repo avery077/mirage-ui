@@ -6,6 +6,7 @@ import Button from './Button';
 storiesOf('Button', module).add('example', () => 
 <Button 
     onPress={()=>{console.log("okok")}} 
+    ToastMessage="message..."
     btnName="submit"
     // style={{ backgroundColor : "green" }}
     />);
