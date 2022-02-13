@@ -18,8 +18,9 @@
     "storybook": "./node_modules/@storybook/react/bin/index.js"
   },
   "dependencies": {
+    "doggie-react-ui": ">=1.0.15",
     "react": "17.0.2",
-    "doggie-react-ui": ">=1.0.15"
+    "react-datepicker": "^4.6.0"
   },
   "peerDependencies": {
     "doggie-react-ui": ">=1.0.15",
